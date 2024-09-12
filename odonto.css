@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: "Manrope", serif;
+}
+
+header {
+    padding: 30px;
+    background-color: #72b1a4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+
+
+header div nav ul {
+    display: flex;
+    gap: 20px;
+
+}
+
+header div nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header div nav ul li a:hover {
+    color: #000000;
+    transition: 0.5s;
+}
+
+#section01 {padding: 180px;
+background-image: url(imagem/dentist-2530990_1280.jpg);
+background-attachment: fixed;
+background-size: cover;
+background-position: cover;
+background-repeat: no-repeat;
+
+}
+
+#section01 div h1 {
+color: rgb(87, 80, 80);
+font-size: 45px;
+font-weight: bold;
+text-align: center;
+
+}
+
+#section01 div p {
+color: grey;
+font-size: 25px;
+font-weight: 800;
+text-align: center;
+
+}
+
+#section01 .botao1 {
+    text-align: center;
+}
+
+#section01 button { /*Chamamos nosso Button que está dentro dessa primeira sessão*/
+padding: 20px; /*Tamanho do preenchimento interno do botão*/
+border-radius: 50px; /*Borda arredondada do botão*/
+width: 200px; /*Tamanho lateral do botão (largura)*/
+cursor: pointer;
+border-color: rgb(139, 199, 179); /*Cor da borda*/
+margin: 30px; /*Margem em volta do Button*/
+
+}
+
+#section01 a button {
+padding: 20px;
+border-radius: 40px; /*Arredondamento da borda do botão*/
+width: 200px;
+cursor: pointer;
+margin-top: 10px;
+color: rgb(35, 83, 67);
+border-color: rgba(19, 153, 108, 0.089);
+
+}
+
+#section02 {
+    background: linear-gradient( 200deg, #539fa2 9.33%, #c4dbb4 90%); /*Uma cor com degradê*/
+    padding: 180px;
+    
+    
+}
+
+.div-proced {
+    display: flex; /*Tornando os itens flex, deixando as caixas lado a lado**/
+    justify-content: center; /*Justificando os itens ao centro*/
+    margin-bottom: 40px;
+    gap: 15px;
+}
+
+.div-proced div {
+    width: 200px; /*Largura da Ciaxa*/
+    height: 280px; /*Altura da caixa*/
+    background-color: rgb(82, 72, 72); /*cor de fundo*/
+    margin-right: 80px; /*Espaçamento entre as caixas*/
+    border-radius: 15px;
+    
+}
+
+.div1 {
+    background-image: url(imagem/prótese.jpeg);
+    background-size: cover; /*Utilizada para que a imagem preencha todo espaço disponivel*/
+    background-position: center; /*Deixar a imagem centralizada*/
+    background-repeat: no-repeat; /*utilizada para não repetir a imagem*/
+}
+
+.div1:hover {
+    width: 250px;
+    height: 300px;
+    transition: 0.8s;
+    border-radius: 20px;
+}
+
+.div2 {
+    background-image: url(imagem/dentist-7397737_1280.jpg);
+    background-size: cover; /*Utilizada para que a imagem preencha todo espaço disponivel*/
+    background-position: center; /*Deixar a imagem centralizada*/
+    background-repeat: no-repeat; /*utilizada para não repetir a imagem*/
+}
+
+.div2:hover {
+    width: 250px;
+    height: 300px;
+    transition: 0.8s;
+    border-radius: 20px;
+}
+
+.div3 {
+    background-image: url(imagem/zoom-2367740_1280.jpg);
+    background-size: cover; /*Utilizada para que a imagem preencha todo espaço disponivel*/
+    background-position: center; /*Deixar a imagem centralizada*/
+    background-repeat: no-repeat; /*utilizada para não repetir a imagem*/
+}
+
+.div3:hover {
+    width: 250px;
+    height: 300px;
+    transition: 0.8s;
+    border-radius: 20px;
+}
+
+.div4 {
+    background-image: url(imagem/facetas-gm.jpg);
+    background-size: cover; /*Utilizada para que a imagem preencha todo espaço disponivel*/
+    background-position: center; /*Deixar a imagem centralizada*/
+    background-repeat: no-repeat; /*utilizada para não repetir a imagem*/
+    
+}
+
+.div4:hover {
+    width: 250px;
+    height: 300px;
+    transition: 0.8s;
+    border-radius: 20px;
+}
+
+.div5 {
+    background-image: url(imagem/dentist-1864921_1280.jpg);
+    background-size: cover; /*Utilizada para que a imagem preencha todo espaço disponivel*/
+    background-position: center; /*Deixar a imagem centralizada*/
+    background-repeat: no-repeat; /*utilizada para não repetir a imagem*/
+}
+
+.div5:hover {
+    width: 250px;
+    height: 300px;
+    transition: 0.8s;
+    border-radius: 20px;
+}
+
+
+.div6 {
+    background-image: url(imagem/lips-8704166_1280.jpg);
+    background-size: cover; /*Utilizada para que a imagem preencha todo espaço disponivel*/
+    background-position: center; /*Deixar a imagem centralizada*/
+    background-repeat: no-repeat; /*utilizada para não repetir a imagem*/
+}
+
+.div6:hover {
+    width: 250px;
+    height: 300px;
+    transition: 0.8s;
+    border-radius: 20px;
+}
+
+#section03 {
+    padding: 180px;
+    background-image: url(imagem/dentist-8729628_1280\ \(1\).jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+
+}
+
+#section03 h2 {
+    color: #0e0f0f; /*Cor da letra*/
+    font-size: 45px; /*Tamanho da letra*/
+    font-weight: bold;
+    text-align: center; /*Alinhando o texto ao centro*/
+    margin-left: 30px; /*Espaçamento lateral*/
+    margin-bottom: 30px; /*Espaçamento inferior*/
+}
+
+#section03 span { /*Estilizando o span*/
+    color: #547770; /*Cor da letra*/
+    font-size: 45px;
+    font-weight: bold; /*Peso da fonte*/
+           
+}
+
+#section03 p {
+    color: #0e0f0f;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    
+   
+}
+
+#section04 {
+   padding: 180px;
+   background-color: #abccb1;
+   display: flex;
+   gap: 15px;
+
+}
+
+.endereco h3 {
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 30px;
+}
+
+
+.endereco p {
+
+    color: black;
+    font-size: 19px;
+    font-weight: 600;
+    margin: 30px;
+    
+
+}
+
+.div-iframe iframe {
+    border-radius: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    padding: 40px;
+    background-color: #539fa2;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+footer .div-logo-footer img {
+    width: 80px;
+    height: auto;
+ 
+
+}
+
+footer div h3 {
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: 300;
+
+}
+
+footer div p {
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.div-sociais i {
+    padding: 10px;
+    font-size: 20px;
+    background-color: antiquewhite;
+
+}
+
+.div-sociais i:hover {
+    background-color: #7e9991;
+    transition: 0.5s;
+}
+
+.div-list-footer a {
+    text-decoration: none;
+    color: antiquewhite;
+}
