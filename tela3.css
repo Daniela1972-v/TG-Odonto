@@ -1,79 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-
+/*Fonte da letra (Google fontes)*/
 * {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    font-family: "Manrope", serif;
+    padding: 0; /*Zerando o preenchimento*/
+    margin: 0; /*Zerando a margin(top, bottom, right, left*/
+    list-style: none; /*remover os marcadores de listas da <ul> */
+    font-family: "Manrope", serif; /*Fonte da letra (Google fontes)*/
 }
 
+/*Início da estilização do Header*/
 header {
-    padding: 30px;
-    background-color: #72b1a4;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    padding: 30px; /*Colocando um tamanho (Preenchimento) no Header*/
+    background-color: #51b6fa; /*Habilitando uma cor de fundo*/
+    display: flex; /*Tornando nosso Header Flex - Deixando os itens lado a lado*/
+    justify-content: space-evenly; /*Justificativa do conteúdo*/
+    align-items: center; /*Alinhamento na vertical - Deixando habilitada ao centro*/
 
 
 }
 
+/*Chamamos nossa logo(img) para estilização*/
 header img {
-    width: 80px;
-    height: auto;
+    width: 80px; /*Largura da imagem*/
+    height: auto; /*Altura da imagem ( automático) */
 }
 
 
 
+/*Chamamos nossa lista não ordenada para estilização*/
 header div nav ul {
-    display: flex;
-    gap: 20px;
+    display: flex;  /*Tornamos nossa lista não ordenada em (Flex), deixando os itens pertencentes a ela, lado a lado.*/
+    gap: 20px; /*Espaçamento entre os elementos*/
 
 }
 
+/*Chamamos nossa âncora (a) para estilização*/
 header div nav ul li a {
-    text-decoration: none;
-    color: white;
+    text-decoration: none; /*Decoração do texto (sublinhado) desabilitado (none)*/
+    color: white; /*Cor da Letra*/
 }
 
+/*Hover= permite que o elemento a qual está trabalhando tenha alguma ação quando passar o  mouse*/
 header div nav ul li a:hover {
-    color: #000000;
-    transition: 0.5s;
+    color: #000000; /*Cor da letra*/
+    transition: 0.5s; /*Tempo de transição*/
 }
+/*Fim da estilização do Header*/
 
+/*Início da estilização da tela 3*/
+
+/* Chamamos sessão da tela 3 para estilização.*/
 .formulario {
-    padding: 180px;
-    background-image: url(imagem/escova.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: cover;
-    background-repeat: no-repeat;
+    padding: 180px; /*Tamanho da sessão*/
+    background-image: url(imagem/escova.jpg); /*Imagem de fundo*/
+    background-attachment: fixed; /*Deixando a imagem fixa*/
+    background-size: cover; /*Tamanho da imagem = total*/
+    background-position: center; /*Deixar a imagem centralizada*/
+    background-repeat: no-repeat; /*utilizada para não repetir a imagem*/
 
 }
 
+/* Chamamos Título da tela 3 para estilização.*/
 .formulario h1 {
-    color: rgb(78, 67, 67);
-    font-size: 45px;
-    font-weight: bold;
-    text-align: center;
+    color: rgb(78, 67, 67); /*Cor da letra*/
+    font-size: 45px; /*Tamanho da letra*/
+    font-weight: bold; /*Peso/Espressura da letra*/
+    text-align: center; /*Alinhamento ao centro*/
 }
 
 
 .formulario .avaliacao {
-    text-align: center;
+    text-align: center; /*Alinhamento do formulário ao centro*/
     
 }
 
+/* Chamamos a label para estilização.*/
 .formulario label {
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
+    
+    color: black;  /*Cor da letra*/
+    font-size: 20px; /*Tamanho da letra*/
+    font-weight: bold; /*Peso/Espressura da letra*/
 
 }
 
+/* Chamamos a input para estilização.*/
 .formulario input {
-    padding: 10px;
-    width: 200px;
-    border-color: #72b1a4;
+    padding: 10px; /*Tamanho da caixa*/
+    width: 200px; /*Largura da caixa*/
+    border-color: #72b1a4; /*Cor da borda*/
+}
+
+.formulario .enviar {
+    padding: 10px; /*Tamanho da caixa*/
+    width: 100px; /*Largura da caixa*/
+    border-color: #72b1a4; /*Cor da borda*/
 }
 
 
@@ -89,7 +108,7 @@ header div nav ul li a:hover {
 
 footer {
     padding: 40px;
-    background-color: #539fa2;
+    background-color: #51b6fa;
     display: flex;
     justify-content: space-evenly;
     gap: 15px;

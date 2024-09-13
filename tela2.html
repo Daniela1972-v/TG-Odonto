@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,38 +13,52 @@
 </head>
 <body>
 
+    <!--  Header - Cabeçalho. Usado para definir nosso cabeçalho -->
     <header>
+        <!-- Criamos uma Div para diferenciar a imagem do restante. -->
         <div>
             <img src="imagem/cuidado-dental.png" alt="">
         </div>
 
+        <!-- Criamos uma Div para diferenciar nossas listas do restante. -->
         <div>
-
+            <!-- Nav= Usada para informar o navegador que os itens dentro dela são navegáveis. -->
             <nav>
+                <!-- Ul= Listas não ordenadas -->
                 <ul>
                     <li>
+                        <!-- Âncora -->
                         <a href="odonto.html">Home</a>
                     </li>
 
+                    
                     <li>
-                        <a href="">Procedimentos</a>
+                        <a href="tela3.html">Agendamentos</a>
                     </li>
 
                     <li>
-                        <a href="">Estética Dental</a>
+                        <a href="tela2.html">Procedimentos</a>
                     </li>
 
                     <li>
-                        <a href="">Agendamentos</a>
+                        <a href="">Saúde Bucal</a>
                     </li>
                 </ul>
             </nav>
         </div>
 
     </header>
-    <main>
-    <section class="tela2-section1">
 
+
+    <!-- Main indica ao navegador onde está o conteúdo principal da página. -->
+    <main>
+
+        <!-- Tag Section = Utilizadas para criar sessões de conteúdo dentro do página. -->
+    <section class="tela2-section1">
+       
+        <!-- Primeira sessão da tela 2 com o nome (tela2-section1) -->
+
+             <!-- Criamos uma Div para diferenciar o Subtítulo e o parágrafo do restante. -->
         
        <h2>Implante Dentário</h2> <br> <br>
 
@@ -56,21 +70,29 @@
     </section>
 
 
+            <!-- Segunda sessão da tela 2 com o nome (tela2-section2) -->
 
     <section class="tela2-section2">
 
+         <!--Criamos uma Div para diferenciar o parágrafo do restante-->
         <div> 
             <p> ° Melhora na mastigação. <br>
                 ° Melhora na fala. <br>
                 ° Facilidade na alimentação.</p> <br> <br> 
         </div>
 
+
+        <!--Criamos uma Div para diferenciar o vídeo da sessão-->
         <div>
 
         
-        <video controls loop >
-            <source src="imagem/video-implante.mp4">
-
+        <video src="imagem/video-implante.mp4"
+        controls
+        width="90%"
+        autoplay
+        muted
+        >
+    
         </video>
 
        </div>
@@ -78,8 +100,10 @@
 
     </section>
 
+    <!-- Terceita sessão da tela 2 com o nome (tela2-section3) -->
     <section class="tela2-section3">
     
+        <!--Criamos uma Div para diferenciar o Subtítulo e parágrafo da sessão-->
         <div>
             <h2>GENGIVOPLASTIA</h2> <br> <br>
 
@@ -92,12 +116,15 @@
       </p>
         </div>
 
+        <!--Criamos uma Div para diferenciar a imagem do restante da sessão-->
+        
         <div class="img-section3">
-            <img src="imagem/Gengivoplastia-2.jpeg" alt="Imagem de gengivoplastia">
+            <img src="imagem/Gengivoplastia-2.jpeg" alt="Imagem de gengivoplastia" loading="lazy">
         </div>
 
     </section>
 
+    
     <section class="tela2-section3">
         
 
@@ -105,45 +132,73 @@
 
     
 </main>
+     
+<!--  Footer = Usada para abrir e habilitar rodapé para a página -->
+<footer>
+  
+    <!--  Criamos uma Div (caixa) para aguardar e diferenciar a logo (img) do restante do rodapé -->
+     <div class="div-logo-footer">
+ 
+         <div>
+             <img src="imagem/cuidado-dental.png" alt="logo da pagina">
+         </div>
+ 
+     </div>
+            
+     <!-- Criamos uma Div (caixa) para aguardar e diferenciar o Subtítulo e parágrafo -->
+     <div>
+         <!-- (h3) Subtítulo -->
+        <h3>Unidade 1</h3>
+        <!-- (p) Parágrafo -->
+        <p>Avenida Pires do Rio, 1256. <br>
+          Jardim Norma - SP</p>
+     </div>
+ 
+     <!-- Criamos uma Div (caixa) para aguardar e diferenciar as listas não ordenadas do rodapé -->
+     <div class="div-list-footer">
+         <nav>
+             <ul>
+                 <li>
+                     <a href="">Agendamentos</a>
+                 </li>
+              
+                 <li>
+                     <a href="">Trabalhe Conosco</a>
+                 </li>
+ 
+                 <li>
+                     <a href="">Política de Privacidade</a>
+                 </li>
+             </ul>
+         </nav>
+     </div>
+   
+     <!-- Criamos uma Div (caixa) para aguardar e diferenciar os ícones -->
+     <div class="div-sociais">
+ 
+         <i class="fa-brands fa-instagram"></i>
+         <i class="fa-brands fa-whatsapp"></i>
+         <i class="fa-brands fa-facebook-f"></i>
+ 
+     </div>
+ 
+ </footer>
+ 
+    
 
-    <footer>
-        <div class="div-logo-footer">
-            <img src="imagem/cuidado-dental.png" alt="">
-        </div>
+    <!-- VLibras= Tradução automática do português para libras. Tornar a página mais acessível para os usuários surdos. -->
+  
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 
-        <div>
-           <h3>Unidade 1</h3>
-           <p>Av. Pires do Rio, 3750 - Jardim Norma, São Paulo - SP, 08240-095</p>
-        </div>
-
-        <div class="div-list-footer">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="">Agendamentos</a>
-                    </li>
-
-                    
-
-                    <li>
-                        <a href="">Trabalhe Conosco</a>
-                    </li>
-
-                    <li>
-                        <a href="">Política de Privacidade</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="div-sociais">
-
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-
-        </div>
-    </footer>
 
     
 </body>

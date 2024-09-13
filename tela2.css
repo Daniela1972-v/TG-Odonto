@@ -1,61 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+/*Fonte da letra (Google fontes)*/
 
 * {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    font-family: "Manrope", serif;
+    padding: 0; /*Zerando o preenchimento*/
+    margin: 0; /*Zerando a margin(top, bottom, right, left*/
+    list-style: none; /*remover os marcadores de listas da <ul> */
+    font-family: "Manrope", serif; /*Fonte da letra (Google fontes)*/
 }
 
+/*Início da estilização do Header*/
 header {
-    padding: 30px;
-    background-color: #539fa2;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    padding: 30px; /*Colocando um tamanho (Preenchimento) no Header*/
+    background-color: #51b6fa; /*Habilitando uma cor de fundo*/
+    display: flex; /*Tornando nosso Header Flex - Deixando os itens lado a lado*/
+    justify-content: space-evenly; /*Justificativa do conteúdo*/
+    align-items: center; /*Alinhamento na vertical - Deixando habilitada ao centro*/
 
 
 }
 
+/*Chamamos nossa logo(img) para estilização*/
 header img {
-    width: 80px;
-    height: auto;
+    width: 80px; /*Largura da imagem*/
+    height: auto; /*Altura da imagem ( automático) */
 }
 
 
 
+/*Chamamos nossa lista não ordenada para estilização*/
 header div nav ul {
-    display: flex;
-    gap: 20px;
+    display: flex;  /*Tornamos nossa lista não ordenada em (Flex), deixando os itens pertencentes a ela, lado a lado.*/
+    gap: 20px; /*Espaçamento entre os elementos*/
 
 }
 
+/*Chamamos nossa âncora (a) para estilização*/
 header div nav ul li a {
-    text-decoration: none;
-    color: white;
+    text-decoration: none; /*Decoração do texto (sublinhado) desabilitado (none)*/
+    color: white; /*Cor da Letra*/
 }
 
+/*Hover= permite que o elemento a qual está trabalhando tenha alguma ação quando passar o  mouse*/
 header div nav ul li a:hover {
-    color: #000000;
-    transition: 0.5s;
+    color: #000000; /*Cor da letra*/
+    transition: 0.5s; /*Tempo de transição*/
 }
+/*Fim da estilização do Header*/
 
+
+/* Chamamos a primeira sessão da tela 2 para estilização.*/
 .tela2-section1 {
-    padding: 180px;
-    background-color: #abccb1;
+    padding: 180px; /*Tamanho da sessão*/
+    background: linear-gradient( 180deg, #90e7fd 9.33%, #319ef8 90%); /* cor de fundo com degradê*/
     
 }
 
+/*Chamamos o subtítulo (h2) da sessão 1 para estilização*/
 .tela2-section1 h2 {
-    color: rgb(65, 56, 56);
-    font-size: 45px;
-    font-weight: bold;
-    text-align: center;
-    margin-left: 20px;
-    margin-bottom: 30px;
+    color: rgb(65, 56, 56); /*Cor da letra*/
+    font-size: 45px; /*Tamanho da letra*/
+    font-weight: bold; /*usada para deixar a letra mais clara ou escura*/
+    text-align: center; /*Usada para centralizar o títilo*/
+    margin-left: 20px; /*Espaçamento á esquerda*/
+    margin-bottom: 30px; /*Espaçamento inferior*/
 
 }
 
+/*Chamamos o Parágrafo (p) da sessão 1 para estilização*/
 .tela2-section1 p {
     color: rgb(65, 56, 56);
     font-size: 25px;
@@ -63,55 +74,64 @@ header div nav ul li a:hover {
     text-align: center;
 }
 
+/*Fim da estilização da sessão 1*/
 
+
+/* Chamamos a segunda sessão da tela 2 para estilização.*/
 .tela2-section2 {
 
-    padding: 180px;
-    background-color: #abccb1;
-
+    padding: 180px; /*Tamanho da sessão*/
+    background: linear-gradient( 180deg, #319ef8 9.33%, #90e7fd 90%); /* cor de fundo com degradê*/
+        
 }
 
-
+/*Chamamos o Parágrafo (p) da sessão 2 para estilização*/
 .tela2-section2 p {
-    color: rgb(65, 56, 56);
-    font-size: 25px;
-    font-weight: 800;
-    text-align: center;
-    margin-top: -170px;  /*Espaçamento em relação a sessão de cima*/
+    color: rgb(65, 56, 56); /*Cor da letra*/
+    font-size: 25px; /*Tamanho da letra*/
+    font-weight: 800; /*usada para deixar a letra mais clara ou escura*/
+    text-align: center; /*Usada para centralizar o títilo*/
+    margin-top: -180px;  /*Espaçamento em relação a sessão de cima*/
 }
 
+/*Fim da estilização da segunda sessão*/
+
+
+/* Chamamos a Terceira sessão da tela 2 para estilização.*/
 .tela2-section3 {
-    padding: 180px;
-    background: linear-gradient(180deg, #04727a64 8.33%, #71e1e964 100%), url(imagem/gengivoplastia-scaled-1.jpeg);
+    padding: 180px; /*Tamanho da sessão*/
+    background: linear-gradient(180deg, #04727a64 8.33%, #71e1e964 100%), url(imagem/gengivoplastia-scaled-1.jpeg); /* Imagem de fundo com filtro degradê*/
     background-size: cover; /*Tamanho da imagem = total*/
     background-attachment: fixed; /*Deixando a imagem fixa*/
     background-position: center; /*Posicionamento da imagem*/
     display: flex; /*Tornando a sessão Flex. Colocando os itens lado a lado*/
     justify-content: space-evenly; /*Justificativa do conteúdoAlinhamento na horizontal*/
     align-items: center; /*Alinhamento na Vertical*/
-    gap: 15px;
+    gap: 15px; /*Espaçamento entre os elementos*/
 
 }
 
-.tela2-section3 img {  /*Estilizando a imagem do cofre*/
+
+.tela2-section3 img {  /*Estilizando a imagem da sessão 3*/
     width: 350px; /*Largura da imagem*/
     height: auto; /*Altura da imagem (automática)*/
     
 
 }
-
+/*Chamamos o Subtítulo (h2) da sessão 3 para estilização*/
 .tela2-section3 h2 {
-    color: rgb(53, 49, 49);
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
+    color: rgb(53, 49, 49); /*Cor da letra*/
+    font-size: 40px; /*Tamanho da letra*/
+    font-weight: bold; /*Peso/Espressura da letra*/
+    text-align: center;  /*Alinhando o subtítulo ao centro*/
 
 }
 
+/*Chamamos o Parágrafo (p) da sessão 3 para estilização*/
 .tela2-section3 p {
-    color: rgb(32, 29, 29);
-    font-size: 25px;
-    font-weight: 800;
+    color: rgb(32, 29, 29); /*Cor da letra*/
+    font-size: 25px; /*Tamanho da letra*/
+    font-weight: 800; /*Peso/Espressura da letra*/
 
 }
 
@@ -135,47 +155,55 @@ header div nav ul li a:hover {
 
 
 
+/*Início da estilização do Footer/Rodapé da pagina*/
 footer {
-    padding: 40px;
-    background-color: #539fa2;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 15px;
+    padding: 40px; /*Tamanho/preenchimento do Footer*/
+    background-color: #51b6fa; /*Cor de fundo*/
+    display: flex; /*Tornando o Footer Flex - Deixando os itens lado a lado*/
+    justify-content: space-evenly; /*Justificativa do conteúdo*/
+    gap: 15px; /*Espaçamento entre os elementos*/
 }
 
+/*Estilizando a logo do Footer*/
 footer .div-logo-footer img {
-    width: 80px;
-    height: auto;
+    width: 80px; /*Largura da imagem*/
+    height: auto; /*Altura da imagem ( automático) */
  
 
 }
 
+/*Estilizando o subtítulo do Footer*/
 footer div h3 {
-    color: whitesmoke;
-    font-size: 25px;
-    font-weight: 300;
+    color: whitesmoke; /*Cor da letra*/
+    font-size: 25px; /*Tamanho da letra*/
+    font-weight: 300; /*Peso/Espressura da letra*/
 
 }
 
+/*Estilizando o parágrafo do Footer*/
 footer div p {
-    color: whitesmoke;
-    font-size: 18px;
-    font-weight: 200;
+    color: whitesmoke; /*Cor da letra*/
+    font-size: 18px; /*Tamanho da letra*/
+    font-weight: 200; /*Peso/Espressura da letra*/
 }
 
+/*Estilizando os ícones do Footer*/
 .div-sociais i {
-    padding: 10px;
-    font-size: 20px;
-    background-color: antiquewhite;
+    padding: 10px; /*Aplicando um respiro (padding) dentro dos ícones*/
+    font-size: 20px; /*Tamanhos dos ícones*/
+    background-color: antiquewhite; /*Cor de fundo*/
 
 }
 
+
+/*Aplicando o hover nos ícones*/
 .div-sociais i:hover {
-    background-color: #7e9991;
-    transition: 0.5s;
+    background-color: #7e9991; /*Cor de fundo*/
+    transition: 0.5s; /*Tempo de transição*/
 }
 
+/*Chamamos nossa âncora (a) para estilização*/
 .div-list-footer a {
-    text-decoration: none;
-    color: antiquewhite;
+    text-decoration: none; /*Decoração do texto (sublinhado) desabilitado (none)*/
+    color: antiquewhite; /*Cor da Letra*/
 }
