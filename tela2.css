@@ -59,6 +59,7 @@ header div nav ul li a:hover {
 .tela2-section1 h2 {
     color: rgb(65, 56, 56); /*Cor da letra*/
     font-size: 45px; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
     font-weight: bold; /*usada para deixar a letra mais clara ou escura*/
     text-align: center; /*Usada para centralizar o títilo*/
     margin-left: 20px; /*Espaçamento á esquerda*/
@@ -68,10 +69,11 @@ header div nav ul li a:hover {
 
 /*Chamamos o Parágrafo (p) da sessão 1 para estilização*/
 .tela2-section1 p {
-    color: rgb(65, 56, 56);
-    font-size: 25px;
-    font-weight: 800px;
-    text-align: center;
+    color: rgb(65, 56, 56); /*Cor da letra*/
+    font-size: 25px; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
+    font-weight: 800px; /*Peso/Espressura da letra*/
+    text-align: center; /*Usada para centralizar o parágrafo*/
 }
 
 /*Fim da estilização da sessão 1*/
@@ -89,6 +91,7 @@ header div nav ul li a:hover {
 .tela2-section2 p {
     color: rgb(65, 56, 56); /*Cor da letra*/
     font-size: 25px; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
     font-weight: 800; /*usada para deixar a letra mais clara ou escura*/
     text-align: center; /*Usada para centralizar o títilo*/
     margin-top: -180px;  /*Espaçamento em relação a sessão de cima*/
@@ -105,7 +108,7 @@ header div nav ul li a:hover {
     background-attachment: fixed; /*Deixando a imagem fixa*/
     background-position: center; /*Posicionamento da imagem*/
     display: flex; /*Tornando a sessão Flex. Colocando os itens lado a lado*/
-    justify-content: space-evenly; /*Justificativa do conteúdoAlinhamento na horizontal*/
+    justify-content: space-evenly; /*Justificativa do conteúdo Alinhamento na horizontal*/
     align-items: center; /*Alinhamento na Vertical*/
     gap: 15px; /*Espaçamento entre os elementos*/
 
@@ -122,8 +125,11 @@ header div nav ul li a:hover {
 .tela2-section3 h2 {
     color: rgb(53, 49, 49); /*Cor da letra*/
     font-size: 40px; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
     font-weight: bold; /*Peso/Espressura da letra*/
     text-align: center;  /*Alinhando o subtítulo ao centro*/
+    margin-top: -180px;  /*Espaçamento em relação a sessão de cima*/
+    
 
 }
 
@@ -131,23 +137,46 @@ header div nav ul li a:hover {
 .tela2-section3 p {
     color: rgb(32, 29, 29); /*Cor da letra*/
     font-size: 25px; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
     font-weight: 800; /*Peso/Espressura da letra*/
+    
+
+}
+/*Fim da estilização da section3*/
+
+
+/* Chamamos a Quarta sessão da tela 2 para estilização.*/
+
+.tela2-section4 {
+    padding: 180px; /*Tamanho da sessão*/
+    background-color: #90e7fd; /*Cor de fundo*/
+    
+}
+
+.tela2-section4 h2 {
+    color: rgb(65, 56, 56); /*Cor da letra*/
+    font-size: 45px; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
+    font-weight: bold; /*usada para deixar a letra mais clara ou escura*/
+    text-align: center; /*Usada para centralizar o títilo*/
+    margin-left: 20px; /*Espaçamento á esquerda*/
+    margin-bottom: 30px; /*Espaçamento inferior*/
 
 }
 
+/*Chamamos o Parágrafo (p) da sessão 4 para estilização*/
+.tela2-section4 p {
+    color: rgb(65, 56, 56); /*Cor da letra*/
+    font-size: 25px; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
+    font-weight: 800; /*usada para deixar a letra mais clara ou escura*/
+    text-align: center; /*Usada para centralizar o títilo*/
+    margin-top: 20px;  /*Espaçamento em relação a sessão de cima*/
+    margin-bottom: 20px; /*Espaçamento inferior*/
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
+/*Fim da estilização da section4*/
 
 
 
@@ -184,6 +213,7 @@ footer div h3 {
 footer div p {
     color: whitesmoke; /*Cor da letra*/
     font-size: 18px; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
     font-weight: 200; /*Peso/Espressura da letra*/
 }
 
@@ -207,3 +237,5 @@ footer div p {
     text-decoration: none; /*Decoração do texto (sublinhado) desabilitado (none)*/
     color: antiquewhite; /*Cor da Letra*/
 }
+
+/*Fim da estilização do footer*/

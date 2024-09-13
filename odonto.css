@@ -35,10 +35,10 @@ header div nav ul {
 
 /*Chamamos nossa âncora (a) para estilização*/
 header div nav ul li a {
-    font-family: Regular 400;
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
     text-decoration: none; /*Decoração do texto (sublinhado) desabilitado (none)*/
     color: white; /*Cor da Letra*/
-    font-family: Regular 400; /*Fonte da letra (Google fonts)*/
+    font-family: Light 300;  /*Fonte da letra (Google fonts)*/
 }
 
 /*Hover= permite que o elemento a qual está trabalhando tenha alguma ação quando passar o  mouse*/
@@ -67,7 +67,7 @@ color: rgb(87, 80, 80); /*Cor da letra*/
 font-size: 45px; /*Tamanho da letra*/
 font-weight: bold; /*usada para deixar a letra mais clara ou escura*/
 text-align: center; /*Usada para centralizar o títilo*/
-font-family: Light 300;
+font-family: Light 300; /*Fonte da letra (Google fonts)*/
 
 }
 
@@ -77,7 +77,7 @@ color: grey; /*Cor da letra*/
 font-size: 25px; /*Tamanho da letra*/
 font-weight: 800; /*usada para deixar a letra mais clara ou escura*/
 text-align: center; /*Usada para centralizar o parágrafo*/
-font-family: Regular 400;
+font-family: Light 300; /*Fonte da letra (Google fonts)*/
 
 }
 
@@ -250,8 +250,9 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
 
 /*Estilização do subtítulo da section 03*/
 #section03 h2 {
-    color: #0e0f0f; /*Cor da letra*/
+    color: #161b1b; /*Cor da letra*/
     font-size: 45px; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
     font-weight: bold; /*Peso da letra*/
     text-align: center; /*Alinhando o texto ao centro*/
     margin-left: 30px; /*Espaçamento lateral*/
@@ -261,14 +262,16 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
 #section03 span { /*Estilizando o span*/
     color: #319ef8; /*Cor da letra*/
     font-size: 45px; /*Tamanho da letra*/
-    font-weight: bold; /*Peso da fonte*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
+    font-weight: bolder; /*Peso da fonte*/
            
 }
 
 /*Estilização do parágrafo da section 03*/
 #section03 p {
-    color: black; /*Cor da letra*/
+    color: rgb(10, 9, 9); /*Cor da letra*/
     font-size: 20px; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
     font-weight: 900; /*Peso da fonte*/
     text-align: center; /*Deixando o parágrafo centralizado*/
     
@@ -289,6 +292,7 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
 #section04 h2 {
     color: rgb(78, 67, 67); /*Cor da letra*/
     font-size: 45px; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
     font-weight: bold; /*Peso/Espressura da letra*/
     text-align: center; /*Alinhamento ao centro*/
 }
@@ -297,8 +301,9 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
 
 /*Estilização do subtítulo h3 da section 04*/
 .endereco h3 {
-    color: black; /*Cor da letra*/
+    color: rgb(68, 65, 65); /*Cor da letra*/
     font-size: 30px; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
     font-weight: bolder; /*Peso/Espressura da letra*/
     margin: 30px; /*Margin em volta do subtítilo*/
 }
@@ -306,8 +311,9 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
 /*Estilização do parágrafo da section 04*/
 .endereco p {
 
-    color: black; /*Cor da letra*/
+    color: rgb(58, 55, 55); /*Cor da letra*/
     font-size: 19px; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
     font-weight: 600; /*Peso/Espressura da letra*/
     margin: 30px; /*Margin em volta do parágrafo*/
     
@@ -347,6 +353,7 @@ footer .div-logo-footer img {
 footer div h3 {
     color: whitesmoke; /*Cor da letra*/
     font-size: 25px; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
     font-weight: 300; /*Peso/Espressura da letra*/
 
 }
@@ -355,6 +362,7 @@ footer div h3 {
 footer div p {
     color: whitesmoke; /*Cor da letra*/
     font-size: 18px; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
     font-weight: 200; /*Peso/Espressura da letra*/
 }
 
@@ -378,4 +386,8 @@ footer div p {
     text-decoration: none; /*Decoração do texto (sublinhado) desabilitado (none)*/
     color: antiquewhite; /*Cor da Letra*/
 }
+
+/*Fim da estilização do Footer*/
+
+
 

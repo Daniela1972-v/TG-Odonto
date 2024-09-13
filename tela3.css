@@ -63,6 +63,7 @@ header div nav ul li a:hover {
 .formulario h1 {
     color: rgb(78, 67, 67); /*Cor da letra*/
     font-size: 45px; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
     font-weight: bold; /*Peso/Espressura da letra*/
     text-align: center; /*Alinhamento ao centro*/
 }
@@ -89,64 +90,68 @@ header div nav ul li a:hover {
     border-color: #72b1a4; /*Cor da borda*/
 }
 
+/* Chamamos a input "Enviar" para estilização.*/
 .formulario .enviar {
     padding: 10px; /*Tamanho da caixa*/
     width: 100px; /*Largura da caixa*/
     border-color: #72b1a4; /*Cor da borda*/
 }
 
+/*Fim da estilização do formulário*/
 
 
-
-
-
-
-
-
-
-
-
+/*Início da estilização do Footer/Rodapé da pagina*/
 footer {
-    padding: 40px;
-    background-color: #51b6fa;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 15px;
+    padding: 40px; /*Tamanho/preenchimento do Footer*/
+    background-color: #51b6fa; /*Cor de fundo*/
+    display: flex; /*Tornando o Footer Flex - Deixando os itens lado a lado*/
+    justify-content: space-evenly; /*Justificativa do conteúdo*/
+    gap: 15px; /*Espaçamento entre os elementos*/
 }
 
+/*Estilizando a logo do Footer*/
 footer .div-logo-footer img {
-    width: 80px;
-    height: auto;
+    width: 80px; /*Largura da imagem*/
+    height: auto; /*Altura da imagem ( automático) */
  
 
 }
 
+/*Estilizando o subtítulo do Footer*/
 footer div h3 {
-    color: whitesmoke;
-    font-size: 25px;
-    font-weight: 300;
+    color: whitesmoke; /*Cor da letra*/
+    font-size: 25px; /*Tamanho da letra*/
+    font-weight: 300; /*Peso/Espressura da letra*/
 
 }
 
+/*Estilizando o parágrafo do Footer*/
 footer div p {
-    color: whitesmoke;
-    font-size: 18px;
-    font-weight: 200;
+    color: whitesmoke; /*Cor da letra*/
+    font-size: 18px; /*Tamanho da letra*/
+    font-family: Light 300; /*Fonte da letra (Google fonts)*/
+    font-weight: 200; /*Peso/Espressura da letra*/
 }
 
+/*Estilizando os ícones do Footer*/
 .div-sociais i {
-    padding: 10px;
-    font-size: 20px;
-    background-color: antiquewhite;
+    padding: 10px; /*Aplicando um respiro (padding) dentro dos ícones*/
+    font-size: 20px; /*Tamanhos dos ícones*/
+    background-color: antiquewhite; /*Cor de fundo*/
 
 }
 
+
+/*Aplicando o hover nos ícones*/
 .div-sociais i:hover {
-    background-color: #7e9991;
-    transition: 0.5s;
+    background-color: #7e9991; /*Cor de fundo*/
+    transition: 0.5s; /*Tempo de transição*/
 }
 
+/*Chamamos nossa âncora (a) para estilização*/
 .div-list-footer a {
-    text-decoration: none;
-    color: antiquewhite;
+    text-decoration: none; /*Decoração do texto (sublinhado) desabilitado (none)*/
+    color: antiquewhite; /*Cor da Letra*/
 }
+
+
