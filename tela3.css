@@ -40,83 +40,41 @@ header div nav ul li a:hover {
     transition: 0.5s;
 }
 
-.tela2-section1 {
-    padding: 200px;
-    background-color: #737373;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 30px;
+.formulario {
+    padding: 180px;
+    background-image: url(imagem/escova.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
 
 }
 
-.tela2-section1 h1 {
-    color: whitesmoke;
+.formulario h1 {
+    color: rgb(78, 67, 67);
     font-size: 45px;
     font-weight: bold;
-    text-align: left;
-    margin-left: 20px;
-    margin-bottom: 30px;
-
-}
-
-
-.tela2-section1 p {
-    color: white;
-    font-size: 20px;
-    margin-top: 15px;
-    margin-bottom: 30px;
-}
-
-.tela2-section1 img {
-    width: 350px;
-    height: auto;
-
-}
-
-.tela2-section2 {
-    padding: 200px;
-    background-color: #41554f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-}
-.div-implantes {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 35px;
-    margin-bottom: 30px;
-}
-.div-implantes h2 {
-    color: white;
-    font-size: 30px;
     text-align: center;
-
 }
 
-.div-implantes p {
-    color: whitesmoke;
+
+.formulario .avaliacao {
+    text-align: center;
+    
+}
+
+.formulario label {
+    color: black;
     font-size: 20px;
-    margin-left: 50px;
+    font-weight: bold;
+
 }
 
-.tela2-section2 img {
-    width: 250px;
-    height: auto;
+.formulario input {
+    padding: 10px;
+    width: 200px;
+    border-color: #72b1a4;
 }
-
-
-
-
-.div-inframe .inframe {
-    border-radius: 10px;
-}
-
-
-
-
 
 
 
