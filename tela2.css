@@ -45,6 +45,101 @@ header div nav ul li a:hover {
     color: #000000; /*Cor da letra*/
     transition: 0.5s; /*Tempo de transição*/
 }
+
+
+
+.mobile-menu {
+    /* Estilização da caixa mobile quando aberta*/
+    display: none;
+    /* Display: Nenhum*/
+    position: fixed;
+    /* Posição fixa na parte direita da página*/
+    top: 0;
+    /* Superior em 0 fazendo a caixa encontar ao topo*/
+    right: 0;
+    /* Direita em 0 fazendfo a caixa encostar a direita*/
+    width: 60%;
+    /* Largura em porcentagem da caixa*/
+    height: 100%;
+    /* Altura de 100% da tela*/
+    background-color: rgb(0, 0, 0);
+    /*Cor de fundo*/
+    flex-direction: column;
+    /* Direção dos itens dentro caixa*/
+    align-items: center;
+    /* Alinhamento na vertical do itens */
+    font-size: 1.8rem;
+    /* Tamanho da letra dentro caixa*/
+}
+
+.nav-links-mobile {
+    /* lista não ordenada na versão mobile*/
+    display: flex;
+    /*Tornando os itens *(as listas) flexíveis */
+    flex-direction: column;
+    /* Estamos direcionando o posicionamento dessas listas*/
+    text-align: end;
+    /* Alinhando o texto */
+    gap: 1.2rem;
+    /* Espaço entre as linhas*/
+    /*width: 0;  Zeramos a largura podendo retirar essa linha para testar visualido*/
+    list-style: none;
+    /* Estilo de lista desabilitado */
+    /* padding: 0; Preenchimento zerado, podendo também ser retirado para testes*/
+
+}
+
+.nav-links-mobile li {
+    /* listas da versão mobile*/
+    border-bottom: 1px solid #787272;
+    /* Borda inferior de cada lista*/
+    padding-bottom: 1.2rem;
+    /* Tamanho da borda*/
+}
+
+
+.nav-links-mobile li a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburguer,
+.close {
+    /* Estilizando os botões de abertura e fechamento */
+    font-size: 24px;
+    /* tamanho do elemento */
+    background: none;
+    /* Removendo o Background */
+    border: none;
+    /* Borda nenhuma */
+    color: white;
+    /* Cor do elemento */
+    cursor: pointer;
+    /* Cursor Habilitado */
+    display: none;
+    /* Escondendo os botões*/
+}
+
+.close {
+    /* Estilizando o botão X */
+    margin-top: 20px;
+    /* Espaçamento superior do X */
+    margin-right: 20px;
+    /* Espaçamento a direita do X */
+    display: block;
+    /* Formatação da imagem em bloco */
+    align-self: end;
+    /* Alinhamento do botão */
+}
+
+.flex {
+    /* Elemento usado no JS*/
+    display: flex;
+    /* Tornando item flexível e visível. */
+}
+
+
+
 /*Fim da estilização do Header*/
 
 
@@ -239,3 +334,108 @@ footer div p {
 }
 
 /*Fim da estilização do footer*/
+
+
+
+@media(max-width: 834px) {
+
+    html {
+        font-size: 12px;
+    }
+
+
+
+    header img {
+        width: 4em;
+        height: auto;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hamburguer {
+        display: block;
+
+    }
+
+    .mobile-menu {
+        z-index: 999;
+    }
+
+    #btn-header {
+        display: none;
+    }
+
+
+    .cad-mobile button {
+        width: 14rem;
+        height: 4rem;
+        border-radius: 5px;
+        background-color: #f8f4f46c;
+        color: #000000;
+    }
+
+
+
+    .cad-mobile button a {
+        text-decoration: none;
+        color: white;
+
+    }
+
+
+    .tela2-section1 {
+        padding: 6em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .tela2-section2 {
+        padding: 15em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    
+    .tela2-section2 video {
+        width: 25rem
+    }
+    
+    .tela2-section3 {
+        padding: 15em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+    
+    .tela2-section4 {
+        padding: 15em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    
+    .tela2-section4 video {
+        width: 25rem
+    }
+    
+    
+    
+    
+    footer i {
+        display: block;
+        margin-top: 10px;
+        gap: 10px;
+    }
+}
+
+

@@ -1,155 +1,241 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 /*Fonte da letra (Google fontes)*/
 
 * {
-    padding: 0; /*Zerando o preenchimento*/
-    margin: 0; /*Zerando a margin(top, bottom, right, left*/
-    list-style: none; /*remover os marcadores de listas da <ul> */
-    font-family: "Manrope", serif; /*Fonte da letra (Google fontes)*/
+    padding: 0;
+    /*Zerando o preenchimento*/
+    margin: 0;
+    /*Zerando a margin(top, bottom, right, left*/
+    list-style: none;
+    /*remover os marcadores de listas da <ul> */
+    font-family: "Manrope", serif;
+    /*Fonte da letra (Google fontes)*/
 }
 
 /*Início da estilização do Header*/
 header {
-    padding: 30px; /*Colocando um tamanho (Preenchimento) no Header*/
-    background-color: #51b6fa; /*Habilitando uma cor de fundo*/
-    display: flex; /*Tornando nosso Header Flex - Deixando os itens lado a lado*/
-    justify-content: space-evenly; /*Justificativa do conteúdo*/
-    align-items: center; /*Alinhamento na vertical - Deixando habilitada ao centro*/
+    padding: 30px;
+    /*Colocando um tamanho (Preenchimento) no Header*/
+    background-color: #51b6fa;
+    /*Habilitando uma cor de fundo*/
+    display: flex;
+    /*Tornando nosso Header Flex - Deixando os itens lado a lado*/
+    justify-content: space-evenly;
+    /*Justificativa do conteúdo*/
+    align-items: center;
+    /*Alinhamento na vertical - Deixando habilitada ao centro*/
 
 
 }
 
 /*Chamamos nossa logo(img) para estilização*/
-header img { 
-    width: 80px; /*Largura da imagem*/
-    height: auto; /*Altura da imagem ( automático) */
+header img {
+    width: 80px;
+    /*Largura da imagem*/
+    height: auto;
+    /*Altura da imagem ( automático) */
 }
 
 
 /*Chamamos nossa lista não ordenada para estilização*/
 header div nav ul {
-    display: flex; /*Tornamos nossa lista não ordenada em (Flex), deixando os itens pertencentes a ela, lado a lado.*/
-    gap: 20px; /*Espaçamento entre os elementos*/
+    display: flex;
+    /*Tornamos nossa lista não ordenada em (Flex), deixando os itens pertencentes a ela, lado a lado.*/
+    gap: 20px;
+    /*Espaçamento entre os elementos*/
 
 }
 
 /*Chamamos nossa âncora (a) para estilização*/
 header div nav ul li a {
-    font-family: Light 300; /*Fonte da letra (Google fonts)*/
-    text-decoration: none; /*Decoração do texto (sublinhado) desabilitado (none)*/
-    color: white; /*Cor da Letra*/
-    font-family: Light 300;  /*Fonte da letra (Google fonts)*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    text-decoration: none;
+    /*Decoração do texto (sublinhado) desabilitado (none)*/
+    color: white;
+    /*Cor da Letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
 }
 
 /*Hover= permite que o elemento a qual está trabalhando tenha alguma ação quando passar o  mouse*/
 
 header div nav ul li a:hover {
-    color: #000000; /*Cor da letra*/
-    transition: 0.5s; /*Tempo de transição*/
+    color: #000000;
+    /*Cor da letra*/
+    transition: 0.5s;
+    /*Tempo de transição*/
 }
 
-.mobile-menu { /* Estilização da caixa mobile quando aberta*/
-    display: none; /* Display: Nenhum*/
-    position: fixed; /* Posição fixa na parte direita da página*/
-    top: 0; /* Superior em 0 fazendo a caixa encontar ao topo*/
-    right: 0; /* Direita em 0 fazendfo a caixa encostar a direita*/
-    width: 60%; /* Largura em porcentagem da caixa*/
-    height: 100%; /* Altura de 100% da tela*/
-    background-color: rgb(0, 0, 0); /*Cor de fundo*/
-    flex-direction: column; /* Direção dos itens dentro caixa*/
-    align-items: center; /* Alinhamento na vertical do itens */
-    font-size: 1.8rem; /* Tamanho da letra dentro caixa*/
+.mobile-menu {
+    /* Estilização da caixa mobile quando aberta*/
+    display: none;
+    /* Display: Nenhum*/
+    position: fixed;
+    /* Posição fixa na parte direita da página*/
+    top: 0;
+    /* Superior em 0 fazendo a caixa encontar ao topo*/
+    right: 0;
+    /* Direita em 0 fazendfo a caixa encostar a direita*/
+    width: 60%;
+    /* Largura em porcentagem da caixa*/
+    height: 100%;
+    /* Altura de 100% da tela*/
+    background-color: rgb(0, 0, 0);
+    /*Cor de fundo*/
+    flex-direction: column;
+    /* Direção dos itens dentro caixa*/
+    align-items: center;
+    /* Alinhamento na vertical do itens */
+    font-size: 1.8rem;
+    /* Tamanho da letra dentro caixa*/
 }
 
-.nav-links-mobile { /* lista não ordenada na versão mobile*/
-    display: flex; /*Tornando os itens *(as listas) flexíveis */
-    flex-direction: column; /* Estamos direcionando o posicionamento dessas listas*/
-    text-align: end; /* Alinhando o texto */
-    gap: 1.2rem; /* Espaço entre as linhas*/
+.nav-links-mobile {
+    /* lista não ordenada na versão mobile*/
+    display: flex;
+    /*Tornando os itens *(as listas) flexíveis */
+    flex-direction: column;
+    /* Estamos direcionando o posicionamento dessas listas*/
+    text-align: end;
+    /* Alinhando o texto */
+    gap: 1.2rem;
+    /* Espaço entre as linhas*/
     /*width: 0;  Zeramos a largura podendo retirar essa linha para testar visualido*/
-    list-style: none; /* Estilo de lista desabilitado */ 
+    list-style: none;
+    /* Estilo de lista desabilitado */
     /* padding: 0; Preenchimento zerado, podendo também ser retirado para testes*/
 
 }
 
-.nav-links-mobile li { /* listas da versão mobile*/
-    border-bottom: 1px solid #787272; /* Borda inferior de cada lista*/
-    padding-bottom: 1.2rem; /* Tamanho da borda*/
+.nav-links-mobile li {
+    /* listas da versão mobile*/
+    border-bottom: 1px solid #787272;
+    /* Borda inferior de cada lista*/
+    padding-bottom: 1.2rem;
+    /* Tamanho da borda*/
 }
 
-.hamburguer, .close { /* Estilizando os botões de abertura e fechamento */
-    font-size: 24px; /* tamanho do elemento */
-    background: none; /* Removendo o Background */
-    border: none; /* Borda nenhuma */
-    color: white; /* Cor do elemento */
-    cursor: pointer; /* Cursor Habilitado */
-    display: none; /* Escondendo os botões*/
+
+.nav-links-mobile li a {
+    text-decoration: none;
+    color: white;
 }
 
-.close { /* Estilizando o botão X */
-    margin-top: 20px; /* Espaçamento superior do X */
-    margin-right: 20px; /* Espaçamento a direita do X */
-    display: block; /* Formatação da imagem em bloco */
-    align-self: end; /* Alinhamento do botão */
+.hamburguer,
+.close {
+    /* Estilizando os botões de abertura e fechamento */
+    font-size: 24px;
+    /* tamanho do elemento */
+    background: none;
+    /* Removendo o Background */
+    border: none;
+    /* Borda nenhuma */
+    color: white;
+    /* Cor do elemento */
+    cursor: pointer;
+    /* Cursor Habilitado */
+    display: none;
+    /* Escondendo os botões*/
 }
 
-.flex { /* Elemento usado no JS*/
-    display: flex; /* Tornando item flexível e visível. */
+.close {
+    /* Estilizando o botão X */
+    margin-top: 20px;
+    /* Espaçamento superior do X */
+    margin-right: 20px;
+    /* Espaçamento a direita do X */
+    display: block;
+    /* Formatação da imagem em bloco */
+    align-self: end;
+    /* Alinhamento do botão */
+}
+
+.flex {
+    /* Elemento usado no JS*/
+    display: flex;
+    /* Tornando item flexível e visível. */
 }
 
 /*Fim da estilização do Header*/
 
 /* Chamamos a primeira sessão para estilização.*/
 #section01 {
-    padding: 180px; /*Tamanho da sessão*/
-    background-image: url(imagem/dentist-2530990_1280.jpg); /*imagem de fundo*/
-    background-attachment: fixed; /*Deixar a imagem de fundo fixada*/
-    background-size: cover; /*Utilizada para que a imagem preencha todo espaço disponivel*/
-    background-position: cover; /*Deixar a imagem centralizada.*/
-    background-repeat: no-repeat; /*Usada para não repetir a imagem na sessão.*/
+    padding: 180px;
+    /*Tamanho da sessão*/
+    background-image: url(imagem/dentist-2530990_1280.jpg);
+    /*imagem de fundo*/
+    background-attachment: fixed;
+    /*Deixar a imagem de fundo fixada*/
+    background-size: cover;
+    /*Utilizada para que a imagem preencha todo espaço disponivel*/
+    background-position: cover;
+    /*Deixar a imagem centralizada.*/
+    background-repeat: no-repeat;
+    /*Usada para não repetir a imagem na sessão.*/
 
 }
 
 /*Chamamos o título (h1) da sessão 1 para estilização*/
 #section01 div h1 {
-color: rgb(87, 80, 80); /*Cor da letra*/
-font-size: 45px; /*Tamanho da letra*/
-font-weight: bold; /*usada para deixar a letra mais clara ou escura*/
-text-align: center; /*Usada para centralizar o títilo*/
-font-family: Light 300; /*Fonte da letra (Google fonts)*/
+    color: rgb(87, 80, 80);
+    /*Cor da letra*/
+    font-size: 45px;
+    /*Tamanho da letra*/
+    font-weight: bold;
+    /*usada para deixar a letra mais clara ou escura*/
+    text-align: center;
+    /*Usada para centralizar o títilo*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
 
 }
 
 /*Chamamos o parágrafo (p) da sessão 1 para estilização*/
 #section01 div p {
-color: grey; /*Cor da letra*/
-font-size: 25px; /*Tamanho da letra*/
-font-weight: 800; /*usada para deixar a letra mais clara ou escura*/
-text-align: center; /*Usada para centralizar o parágrafo*/
-font-family: Light 300; /*Fonte da letra (Google fonts)*/
+    color: grey;
+    /*Cor da letra*/
+    font-size: 25px;
+    /*Tamanho da letra*/
+    font-weight: 800;
+    /*usada para deixar a letra mais clara ou escura*/
+    text-align: center;
+    /*Usada para centralizar o parágrafo*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
 
 }
 
 /*Chamamos nosso Button que está dentro da primeira sessão*/
 #section01 .botao1 {
-    text-align: center; /*Usada para centralizar o botão*/
+    text-align: center;
+    /*Usada para centralizar o botão*/
 }
 
 /*Estilização do botão da section 01*/
-#section01 button { 
-padding: 20px; /*Tamanho do preenchimento interno do botão*/
-border-radius: 50px; /*Borda arredondada do botão*/
-width: 200px; /*Tamanho lateral do botão (largura)*/
-border-color: rgb(49, 235, 241); /*Cor da borda*/
-border-radius: 40px; /*Arredondamento da borda do botão*/
-margin: 30px; /*Margem em volta do Button*/
-cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do mouse está sobre um elemento.*/
+#section01 button {
+    padding: 20px;
+    /*Tamanho do preenchimento interno do botão*/
+    border-radius: 50px;
+    /*Borda arredondada do botão*/
+    width: 200px;
+    /*Tamanho lateral do botão (largura)*/
+    border-color: rgb(49, 235, 241);
+    /*Cor da borda*/
+    border-radius: 40px;
+    /*Arredondamento da borda do botão*/
+    margin: 30px;
+    /*Margem em volta do Button*/
+    cursor: pointer;
+    /* Habilitado o cursor do mouse, mostrado quando o ponteiro do mouse está sobre um elemento.*/
 
 
 }
+
 /*Estilização a Âncora do botão da section 01*/
 #section01 a button {
- color: rgb(3, 74, 95); /*Cor da letra*/
+    color: rgb(3, 74, 95);
+    /*Cor da letra*/
 
 }
 
@@ -159,127 +245,186 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
 /* Chamamos a segunda sessão para estilização.*/
 
 #section02 {
-    background: linear-gradient( 180deg, #90e7fd 9.33%, #319ef8 90%); /*Uma cor com degradê*/
-    padding: 180px; /*Tamanho da sessão*/
-    
-    
+    background: linear-gradient(180deg, #90e7fd 9.33%, #319ef8 90%);
+    /*Uma cor com degradê*/
+    padding: 180px;
+    /*Tamanho da sessão*/
+
+
 }
 
 /*Chamamos a div-proced da section 02 para deixar flex*/
 .div-proced {
-    display: flex; /*Tornando os itens flex, deixando as caixas lado a lado**/
-    justify-content: center; /*Justificando os itens ao centro*/
-    margin-bottom: 40px; /*espaçamento inferior*/
-    gap: 15px; /* espaçamento entre os elementos */
+    display: flex;
+    /*Tornando os itens flex, deixando as caixas lado a lado**/
+    justify-content: center;
+    /*Justificando os itens ao centro*/
+    margin-bottom: 40px;
+    /*espaçamento inferior*/
+    gap: 15px;
+    /* espaçamento entre os elementos */
 }
 
 /*estilização das caixas*/
 .div-proced div {
-    width: 200px; /*Largura da Caixa*/
-    height: 280px; /*Altura da caixa*/
-    background-color: rgb(82, 72, 72); /*cor de fundo*/
-    margin-right: 80px; /*Espaçamento entre as caixas*/
-    border-radius: 15px; /*Arredondamento da borda*/
-    
-} 
+    width: 200px;
+    /*Largura da Caixa*/
+    height: 280px;
+    /*Altura da caixa*/
+    background-color: rgb(82, 72, 72);
+    /*cor de fundo*/
+    margin-right: 80px;
+    /*Espaçamento entre as caixas*/
+    border-radius: 15px;
+    /*Arredondamento da borda*/
+
+}
 
 /*estilização das caixas (div1)*/
 .div1 {
-    background-image: url(imagem/prótese.jpeg); /*Imagem de fundo*/
-    background-size: cover; /*Utilizada para que a imagem preencha todo espaço disponivel*/
-    background-position: center; /*Deixar a imagem centralizada*/
-    background-repeat: no-repeat; /*utilizada para não repetir a imagem*/
+    background-image: url(imagem/prótese.jpeg);
+    /*Imagem de fundo*/
+    background-size: cover;
+    /*Utilizada para que a imagem preencha todo espaço disponivel*/
+    background-position: center;
+    /*Deixar a imagem centralizada*/
+    background-repeat: no-repeat;
+    /*utilizada para não repetir a imagem*/
 }
 
 
 /*Aplicando o Hover na div1*/
 .div1:hover {
-    width: 250px; /*Largura da Caixa*/
-    height: 300px; /*Altura da caixa*/
-    transition: 0.8s; /*Tempo de transição*/
-    border-radius: 20px; /*Arredondamento da caixa*/
+    width: 250px;
+    /*Largura da Caixa*/
+    height: 300px;
+    /*Altura da caixa*/
+    transition: 0.8s;
+    /*Tempo de transição*/
+    border-radius: 20px;
+    /*Arredondamento da caixa*/
 }
 
 /*estilização das caixas (div2)*/
 .div2 {
-    background-image: url(imagem/dentist-7397737_1280.jpg); /*Imagem de fundo*/
-    background-size: cover; /*Utilizada para que a imagem preencha todo espaço disponivel*/
-    background-position: center; /*Deixar a imagem centralizada*/
-    background-repeat: no-repeat; /*utilizada para não repetir a imagem*/
+    background-image: url(imagem/dentist-7397737_1280.jpg);
+    /*Imagem de fundo*/
+    background-size: cover;
+    /*Utilizada para que a imagem preencha todo espaço disponivel*/
+    background-position: center;
+    /*Deixar a imagem centralizada*/
+    background-repeat: no-repeat;
+    /*utilizada para não repetir a imagem*/
 }
 
 /*Aplicando o Hover na div2*/
 .div2:hover {
-    width: 250px; /*Largura da Caixa*/
-    height: 300px; /*Altura da caixa*/
-    transition: 0.8s; /*Tempo de transição*/
-    border-radius: 20px; /*Arredondamento da caixa*/
+    width: 250px;
+    /*Largura da Caixa*/
+    height: 300px;
+    /*Altura da caixa*/
+    transition: 0.8s;
+    /*Tempo de transição*/
+    border-radius: 20px;
+    /*Arredondamento da caixa*/
 }
 
 /*estilização das caixas (div3)*/
 .div3 {
-    background-image: url(imagem/zoom-2367740_1280.jpg); /*Imagem de fundo*/
-    background-size: cover; /*Utilizada para que a imagem preencha todo espaço disponivel*/
-    background-position: center; /*Deixar a imagem centralizada*/
-    background-repeat: no-repeat; /*utilizada para não repetir a imagem*/
+    background-image: url(imagem/zoom-2367740_1280.jpg);
+    /*Imagem de fundo*/
+    background-size: cover;
+    /*Utilizada para que a imagem preencha todo espaço disponivel*/
+    background-position: center;
+    /*Deixar a imagem centralizada*/
+    background-repeat: no-repeat;
+    /*utilizada para não repetir a imagem*/
 }
 
 /*Aplicando o Hover na div3*/
 .div3:hover {
-    width: 250px; /*Largura da Caixa*/
-    height: 300px; /*Altura da caixa*/
-    transition: 0.8s; /*Tempo de transição*/
-    border-radius: 20px; /*Arredondamento da caixa*/
+    width: 250px;
+    /*Largura da Caixa*/
+    height: 300px;
+    /*Altura da caixa*/
+    transition: 0.8s;
+    /*Tempo de transição*/
+    border-radius: 20px;
+    /*Arredondamento da caixa*/
 }
 
 /*estilização das caixas (div4)*/
 .div4 {
-    background-image: url(imagem/facetas-gm.jpg); /*Imagem de fundo*/
-    background-size: cover; /*Utilizada para que a imagem preencha todo espaço disponivel*/
-    background-position: center; /*Deixar a imagem centralizada*/
-    background-repeat: no-repeat; /*utilizada para não repetir a imagem*/
-    
+    background-image: url(imagem/facetas-gm.jpg);
+    /*Imagem de fundo*/
+    background-size: cover;
+    /*Utilizada para que a imagem preencha todo espaço disponivel*/
+    background-position: center;
+    /*Deixar a imagem centralizada*/
+    background-repeat: no-repeat;
+    /*utilizada para não repetir a imagem*/
+
 }
 
 /*Aplicando o Hover na div4*/
 .div4:hover {
-    width: 250px; /*Largura da Caixa*/
-    height: 300px; /*Altura da caixa*/
-    transition: 0.8s; /*Tempo de transição*/
-    border-radius: 20px; /*Arredondamento da caixa*/
+    width: 250px;
+    /*Largura da Caixa*/
+    height: 300px;
+    /*Altura da caixa*/
+    transition: 0.8s;
+    /*Tempo de transição*/
+    border-radius: 20px;
+    /*Arredondamento da caixa*/
 }
 
 /*estilização das caixas (div5)*/
 .div5 {
-    background-image: url(imagem/dentist-1864921_1280.jpg); /*Imagem de fundo*/
-    background-size: cover; /*Utilizada para que a imagem preencha todo espaço disponivel*/
-    background-position: center; /*Deixar a imagem centralizada*/
-    background-repeat: no-repeat; /*utilizada para não repetir a imagem*/
+    background-image: url(imagem/dentist-1864921_1280.jpg);
+    /*Imagem de fundo*/
+    background-size: cover;
+    /*Utilizada para que a imagem preencha todo espaço disponivel*/
+    background-position: center;
+    /*Deixar a imagem centralizada*/
+    background-repeat: no-repeat;
+    /*utilizada para não repetir a imagem*/
 }
 
 /*Aplicando o Hover na div5*/
 .div5:hover {
-    width: 250px; /*Largura da Caixa*/
-    height: 300px; /*Altura da caixa*/
-    transition: 0.8s; /*Tempo de transição*/
-    border-radius: 20px; /*Arredondamento da caixa*/
+    width: 250px;
+    /*Largura da Caixa*/
+    height: 300px;
+    /*Altura da caixa*/
+    transition: 0.8s;
+    /*Tempo de transição*/
+    border-radius: 20px;
+    /*Arredondamento da caixa*/
 }
 
 
 /*estilização das caixas (div6)*/
 .div6 {
-    background-image: url(imagem/lips-8704166_1280.jpg); /*Imagem de fundo*/
-    background-size: cover; /*Utilizada para que a imagem preencha todo espaço disponivel*/
-    background-position: center; /*Deixar a imagem centralizada*/
-    background-repeat: no-repeat; /*utilizada para não repetir a imagem*/
+    background-image: url(imagem/lips-8704166_1280.jpg);
+    /*Imagem de fundo*/
+    background-size: cover;
+    /*Utilizada para que a imagem preencha todo espaço disponivel*/
+    background-position: center;
+    /*Deixar a imagem centralizada*/
+    background-repeat: no-repeat;
+    /*utilizada para não repetir a imagem*/
 }
 
 /*Aplicando o Hover na div6*/
 .div6:hover {
-    width: 250px; /*Largura da Caixa*/
-    height: 300px; /*Altura da caixa*/
-    transition: 0.8s; /*Tempo de transição*/
-    border-radius: 20px; /*Arredondamento da caixa*/
+    width: 250px;
+    /*Largura da Caixa*/
+    height: 300px;
+    /*Altura da caixa*/
+    transition: 0.8s;
+    /*Tempo de transição*/
+    border-radius: 20px;
+    /*Arredondamento da caixa*/
 }
 
 /*Fim da estilização da section 02*/
@@ -287,91 +432,134 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
 
 /*Início da estilização da section 03*/
 #section03 {
-    padding: 180px; /*Tamanho da sessão*/
-    background-image: url(imagem/dentist-8729628_1280\ \(1\).jpg); /*Imagem de fundo*/
-    background-attachment: fixed;  /*Deixar a imagem de fundo fixada*/
-    background-size: cover; /*Utilizada para que a imagem preencha todo espaço disponivel*/
-    background-position: cover; /*Deixar a imagem centralizada.*/
-    background-repeat: no-repeat;  /*Usada para não repetir a imagem na sessão.*/
+    padding: 180px;
+    /*Tamanho da sessão*/
+    background-image: url(imagem/dentist-8729628_1280\ \(1\).jpg);
+    /*Imagem de fundo*/
+    background-attachment: fixed;
+    /*Deixar a imagem de fundo fixada*/
+    background-size: cover;
+    /*Utilizada para que a imagem preencha todo espaço disponivel*/
+    background-position: cover;
+    /*Deixar a imagem centralizada.*/
+    background-repeat: no-repeat;
+    /*Usada para não repetir a imagem na sessão.*/
 
-   
+
 }
 
 /*Estilização do subtítulo da section 03*/
 #section03 h2 {
-    color: #161b1b; /*Cor da letra*/
-    font-size: 45px; /*Tamanho da letra*/
-    font-family: Light 300; /*Fonte da letra (Google fonts)*/
-    font-weight: bold; /*Peso da letra*/
-    text-align: center; /*Alinhando o texto ao centro*/
-    margin-left: 30px; /*Espaçamento lateral*/
-    margin-bottom: 30px; /*Espaçamento inferior*/
+    color: #161b1b;
+    /*Cor da letra*/
+    font-size: 45px;
+    /*Tamanho da letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    font-weight: bold;
+    /*Peso da letra*/
+    text-align: center;
+    /*Alinhando o texto ao centro*/
+    margin-left: 30px;
+    /*Espaçamento lateral*/
+    margin-bottom: 30px;
+    /*Espaçamento inferior*/
 }
 
-#section03 span { /*Estilizando o span*/
-    color: #319ef8; /*Cor da letra*/
-    font-size: 45px; /*Tamanho da letra*/
-    font-family: Light 300; /*Fonte da letra (Google fonts)*/
-    font-weight: bolder; /*Peso da fonte*/
-           
+#section03 span {
+    /*Estilizando o span*/
+    color: #319ef8;
+    /*Cor da letra*/
+    font-size: 45px;
+    /*Tamanho da letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    font-weight: bolder;
+    /*Peso da fonte*/
+
 }
 
 /*Estilização do parágrafo da section 03*/
 #section03 p {
-    color: rgb(10, 9, 9); /*Cor da letra*/
-    font-size: 20px; /*Tamanho da letra*/
-    font-family: Light 300; /*Fonte da letra (Google fonts)*/
-    font-weight: 900; /*Peso da fonte*/
-    text-align: center; /*Deixando o parágrafo centralizado*/
-    
-   
+    color: rgb(10, 9, 9);
+    /*Cor da letra*/
+    font-size: 20px;
+    /*Tamanho da letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    font-weight: 900;
+    /*Peso da fonte*/
+    text-align: center;
+    /*Deixando o parágrafo centralizado*/
+
+
 }
 
 /*Fim da estilização da section 03*/
 
 /*Início da estilização da section 04*/
 #section04 {
-   padding: 180px; /*Tamanho da sessão*/
-   background-color: #90e7fd; /*Cor de fundo*/
-   display: flex; /*Tornando a sessão Flex - Deixando os itens lado a lado*/
-   gap: 15px; /*Espaçamento entre os elementos*/
+    padding: 180px;
+    /*Tamanho da sessão*/
+    background-color: #90e7fd;
+    /*Cor de fundo*/
+    display: flex;
+    /*Tornando a sessão Flex - Deixando os itens lado a lado*/
+    gap: 15px;
+    /*Espaçamento entre os elementos*/
 
 }
 
 #section04 h2 {
-    color: rgb(78, 67, 67); /*Cor da letra*/
-    font-size: 45px; /*Tamanho da letra*/
-    font-family: Light 300; /*Fonte da letra (Google fonts)*/
-    font-weight: bold; /*Peso/Espressura da letra*/
-    text-align: center; /*Alinhamento ao centro*/
+    color: rgb(78, 67, 67);
+    /*Cor da letra*/
+    font-size: 45px;
+    /*Tamanho da letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    font-weight: bold;
+    /*Peso/Espressura da letra*/
+    text-align: center;
+    /*Alinhamento ao centro*/
 }
 
 
 
 /*Estilização do subtítulo h3 da section 04*/
 .endereco h3 {
-    color: rgb(68, 65, 65); /*Cor da letra*/
-    font-size: 30px; /*Tamanho da letra*/
-    font-family: Light 300; /*Fonte da letra (Google fonts)*/
-    font-weight: bolder; /*Peso/Espressura da letra*/
-    margin: 30px; /*Margin em volta do subtítilo*/
+    color: rgb(68, 65, 65);
+    /*Cor da letra*/
+    font-size: 30px;
+    /*Tamanho da letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    font-weight: bolder;
+    /*Peso/Espressura da letra*/
+    margin: 30px;
+    /*Margin em volta do subtítilo*/
 }
 
 /*Estilização do parágrafo da section 04*/
 .endereco p {
 
-    color: rgb(58, 55, 55); /*Cor da letra*/
-    font-size: 19px; /*Tamanho da letra*/
-    font-family: Light 300; /*Fonte da letra (Google fonts)*/
-    font-weight: 600; /*Peso/Espressura da letra*/
-    margin: 30px; /*Margin em volta do parágrafo*/
-    
+    color: rgb(58, 55, 55);
+    /*Cor da letra*/
+    font-size: 19px;
+    /*Tamanho da letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    font-weight: 600;
+    /*Peso/Espressura da letra*/
+    margin: 30px;
+    /*Margin em volta do parágrafo*/
+
 
 }
 
 /*Estilização do inframe (google maps)*/
 .div-iframe iframe {
-    border-radius: 10px; /*Arredondamento da borda*/
+    border-radius: 10px;
+    /*Arredondamento da borda*/
 
 }
 
@@ -383,57 +571,79 @@ cursor: pointer; /* Habilitado o cursor do mouse, mostrado quando o ponteiro do 
 
 /*Início da estilização do Footer/Rodapé da pagina*/
 footer {
-    padding: 40px; /*Tamanho/preenchimento do Footer*/
-    background-color: #51b6fa; /*Cor de fundo*/
-    display: flex; /*Tornando o Footer Flex - Deixando os itens lado a lado*/
-    justify-content: space-evenly; /*Justificativa do conteúdo*/
-    gap: 15px; /*Espaçamento entre os elementos*/
+    padding: 40px;
+    /*Tamanho/preenchimento do Footer*/
+    background-color: #51b6fa;
+    /*Cor de fundo*/
+    display: flex;
+    /*Tornando o Footer Flex - Deixando os itens lado a lado*/
+    justify-content: space-evenly;
+    /*Justificativa do conteúdo*/
+    gap: 15px;
+    /*Espaçamento entre os elementos*/
 }
 
 /*Estilizando a logo do Footer*/
 footer .div-logo-footer img {
-    width: 80px; /*Largura da imagem*/
-    height: auto; /*Altura da imagem ( automático) */
- 
+    width: 80px;
+    /*Largura da imagem*/
+    height: auto;
+    /*Altura da imagem ( automático) */
+
 
 }
 
 /*Estilizando o subtítulo do Footer*/
 footer div h3 {
-    color: whitesmoke; /*Cor da letra*/
-    font-size: 25px; /*Tamanho da letra*/
-    font-family: Light 300; /*Fonte da letra (Google fonts)*/
-    font-weight: 300; /*Peso/Espressura da letra*/
+    color: whitesmoke;
+    /*Cor da letra*/
+    font-size: 25px;
+    /*Tamanho da letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    font-weight: 300;
+    /*Peso/Espressura da letra*/
 
 }
 
 /*Estilizando o parágrafo do Footer*/
 footer div p {
-    color: whitesmoke; /*Cor da letra*/
-    font-size: 18px; /*Tamanho da letra*/
-    font-family: Light 300; /*Fonte da letra (Google fonts)*/
-    font-weight: 200; /*Peso/Espressura da letra*/
+    color: whitesmoke;
+    /*Cor da letra*/
+    font-size: 18px;
+    /*Tamanho da letra*/
+    font-family: Light 300;
+    /*Fonte da letra (Google fonts)*/
+    font-weight: 200;
+    /*Peso/Espressura da letra*/
 }
 
 /*Estilizando os ícones do Footer*/
 .div-sociais i {
-    padding: 10px; /*Aplicando um respiro (padding) dentro dos ícones*/
-    font-size: 20px; /*Tamanhos dos ícones*/
-    background-color: antiquewhite; /*Cor de fundo*/
+    padding: 10px;
+    /*Aplicando um respiro (padding) dentro dos ícones*/
+    font-size: 20px;
+    /*Tamanhos dos ícones*/
+    background-color: antiquewhite;
+    /*Cor de fundo*/
 
 }
 
 
 /*Aplicando o hover nos ícones*/
 .div-sociais i:hover {
-    background-color: #7e9991; /*Cor de fundo*/
-    transition: 0.5s; /*Tempo de transição*/
+    background-color: #7e9991;
+    /*Cor de fundo*/
+    transition: 0.5s;
+    /*Tempo de transição*/
 }
 
 /*Chamamos nossa âncora (a) para estilização*/
 .div-list-footer a {
-    text-decoration: none; /*Decoração do texto (sublinhado) desabilitado (none)*/
-    color: antiquewhite; /*Cor da Letra*/
+    text-decoration: none;
+    /*Decoração do texto (sublinhado) desabilitado (none)*/
+    color: antiquewhite;
+    /*Cor da Letra*/
 }
 
 /*Fim da estilização do Footer*/
@@ -452,17 +662,18 @@ footer div p {
         } */
 
 
-        header img {
-            width: 4em;
-            height: auto;
-            }
+    header img {
+        width: 4em;
+        height: auto;
+    }
+
     .nav-links {
         display: none;
     }
 
-    .hamburger {
+    .hamburguer {
         display: block;
-        
+
     }
 
     .mobile-menu {
@@ -470,7 +681,7 @@ footer div p {
     }
 
     #btn-header {
-       display: none;
+        display: none;
     }
 
 
@@ -489,7 +700,96 @@ footer div p {
         color: white;
 
     }
+
+    #section01 {
+        padding: 9em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #section02 {
+        padding: 1em;
+        
+    }
+    
+    .div-proced {
+        display: block;
+        flex-direction: column;
+    }
+    
+    .div1 {
+        text-align: center;
+        margin-left: 100px;
+    }
+    
+    .div2 {
+        text-align: center;
+        margin-left: 100px;
+    }
+    
+    .div3 {
+        text-align: center;
+        margin-left: 100px;
+    }
+    
+    .div4 {
+        text-align: center;
+        margin-left: 100px;
+    }
+    
+    .div5 {
+        text-align: center;
+        margin-left: 100px;
+    }
+    
+    .div6 {
+        text-align: center;
+        margin-left: 100px;
+    }
+    
+    
+    #section03 {
+        padding: 2em;
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #section04 {
+        padding: 3em;
+        display: block;
+        flex-direction: column;
+        
+        
+    }
+    
+    .div-iframe {
+        margin-right: 20px;
+        
+    }
+    
+    
+    
+    footer i {
+        display: block;
+        margin-top: 10px;
+        gap: 10px;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
