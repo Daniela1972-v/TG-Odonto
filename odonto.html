@@ -7,24 +7,30 @@
     <link rel="shortcut icon" href="imagem/dente.png" type="image/x-icon">
 
     <link rel="stylesheet" href="odonto.css">
+    <script src="emporio.js" defer></script>
 
     <script src="https://kit.fontawesome.com/fdd516a2fb.js" crossorigin="anonymous"></script>
 
 </head>
 
-<a href=""></a>
+
 <body>
      <!--  Header - Cabeçalho. Usado para definir nosso cabeçalho -->
     <header>
+
          <!-- Criamos uma Div para diferenciar a imagem do restante. -->
         <div>
             <img src="imagem/cuidado-dental.png" alt="logo da pagina">
         </div>
 
+        
+
           <!-- Criamos uma Div para diferenciar nossas listas do restante. -->
         <div>
-            <!-- Nav= Usada para informar o navegador que os itens dentro dela são navegáveis. -->
+
             <nav>
+            <!-- Nav= Usada para informar o navegador que os itens dentro dela são navegáveis. -->
+            
                 <!-- Ul= Listas não ordenadas -->
                 <ul>
 
@@ -47,11 +53,57 @@
 
                 
                 </ul>
-            </nav>
+            
+        </div>
+       
+        <!-- Criamos nossa caixa (DIV) para guardar os elementos do hamburguer quando estiver aberto -->
+        <div class="mobile-menu" id="mobileMenu">
+
+            <!-- Botão     para ser utilizado para fechamento da lista -->
+            <button id="closeButton" class="close">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <!-- Essa lista é do Menu Hamburguer quando estiver aberto. -->
+            <ul class="nav-links-mobile">
+                <li>
+                    <a href=>TESTE</a>
+                </li>
+
+                <li>
+                    <a href=>TESTE</a>
+                </li>
+
+                <li>
+                    <a href=>TESTE</a>
+                </li>
+
+            </ul>
+
+            <div id="btn-mobile" class="cad-mobile">
+                <button>
+                    <a href="form.html" target="_blank">
+
+                        <!-- <img srv="img/user.png" alt="" -->
+
+                        <p>Cadastre-se</p>
+                    </a>
+                </button>
+
+            </div>
+            <!-- Fim da caixa do Menu Hamburguer (Quando estiver aberto) -->
+
         </div>
 
+        <!-- Botão de Hamburguer, ele está fora da Div justamente por ser um elemento singular. -->
+        <button class="hamburguer" id="hamburguerButton">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+            
 
 
+    </nav>
 
     </header>
 
