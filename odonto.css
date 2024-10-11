@@ -159,6 +159,21 @@ header div nav ul li a:hover {
 
 /*Fim da estilização do Header*/
 
+.whatsapp {
+    position: relative; /*Permite que elementos posicionados dentro da classe sejam posicionados em relação a ela*/
+
+}
+
+/*Estilizando a imagem dentro da classe*/
+.whatsapp img {
+    position: fixed; /*Mantém a imagem em umaposição fixa na tela, mesmo rolando a tela */
+    bottom: 20px;  /*Define a distância da imagem em relação a parte inferior da tela*/
+    right: 20px; /*Define a distância da imagem em relação á direita da tela*/
+    height: auto; /*Ajusta a altura da imagem automaticamente para manter a proporcão*/
+    width: 3rem;
+ 
+}
+
 /* Chamamos a primeira sessão para estilização.*/
 #section01 {
     padding: 180px;
@@ -777,6 +792,10 @@ footer div p {
         display: block;
         margin-top: 10px;
         gap: 10px;
+    }
+
+    .whatsapp img {
+        width: 3rem;
     }
 }
 
