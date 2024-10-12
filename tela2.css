@@ -62,7 +62,7 @@ header div nav ul li a:hover {
     /* Largura em porcentagem da caixa*/
     height: 100%;
     /* Altura de 100% da tela*/
-    background-color: rgb(0, 0, 0);
+    background-color: #72acd3;
     /*Cor de fundo*/
     flex-direction: column;
     /* Direção dos itens dentro caixa*/
